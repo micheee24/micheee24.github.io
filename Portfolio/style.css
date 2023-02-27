@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: 'Josefin Sans', sans-serifs;
+    box-sizing: border-box;
+
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url("LA-2.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: silver;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-shadow: black -6px -2px 6px;
+}
+span{
+    color: #3CCFF3;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+color: silver;
+text-decoration: none;
+font-weight:bold;
+text-transform: capitalize;
+}
+nav ul li a:hover{
+    color:#3CCFF3;
+    transition: 2s;
+}
+.btn{
+    background-color: #3CCFF3;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+body{
+    background-color: #e7e5e4;
+}
