@@ -28,7 +28,7 @@
   <body>
 
     <!-- Begin NavBar -->
-    <header>
+    <!-- <header>
 <nav class="navbar navbar-expand-lg bg-body-tertiary shadow fixed-top" id = "mainNavbar">
   <div class="container">
     <a class="navbar-brand" href="#"><img src="images/portfolio.png" class="img-fluid" alt="Logo"></a>
@@ -52,18 +52,29 @@
       </ul>
     </div>
   </div>
-</nav>
-    </header>
+</nav> -->
+
+<header>
+  <a href="#" class="logo">Portfo<span style="color: #009bf9;">lio</span></a>
+
+  <nav>
+    <a href="#Home" class="active">Home</a>
+    <a href="#About">About</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Contact">Contact</a>
+  </nav>
+</header>
+    <!-- </header> -->
     <!-- End NavBar -->
 
     <!-- About me -->
-<section id="hero">
     <div class="container">
+          <section class="text-left" id="About">About <span style="color: #009bf9;">Me</span></section>
       <h1 class="text-center mt-5 fw-bold">Michel <span class="typer">Medina</span></h1>
       <div class="row">
           <div class="col-md-1 social d-md-flex flex-column justify-content-center">
-            <a href="https://www.linkedin.com/in/michel-medina-232868227/" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://twitter.com/Micheee98M" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/michel-medina-232868227/" target="_blank"><i  class="bi bi-linkedin"></i></a>
+            <a id="icon" href="https://twitter.com/Micheee98M" target="_blank"><i class="bi bi-twitter" ></i></a>
           </div>
           <div class="col-md-4">
             <img src="images/me.png" alt= "me" class="img-fluid mt-5 ms-lg-4">
@@ -71,16 +82,17 @@
           <div class="col-md-7 d-flex flex-column justify-content-center">
             <div class="hero-content px-lg-5">
               <h2 class="text-center"><span style="color: #009bf9;">@</span>micheee24 <a href="https://github.com/micheee24/portfolio.github.io" target="_blank"><i class="bi bi-github"></i></a></h2>
-              <p class="text-center">Meet a passionate full stack developer with a deep love for technology. With expertise in JavaScript, HTML, CSS, Java, and C++, they are capable of creating dynamic and responsive websites and web applications that cater to clients and users' needs. Their commitment to continuous learning and growth in software development ensures they stay up-to-date with the latest trends and technologies. They thrive on collaborating with fellow developers and designers to produce innovative solutions. <span style="color: #009bf9">Click the button below to see a my video introduction!</span> 
+              <p class="text-center">Meet a passionate full stack developer with a deep love for technology. With expertise in JavaScript, HTML, CSS, Java, and C++, they are capable of creating dynamic and responsive websites and web applications that cater to clients and users' needs. Their commitment to continuous learning and growth in software development ensures they stay up-to-date with the latest trends and technologies. They thrive on collaborating with fellow developers and designers to produce innovative solutions. <span style="color: #009bf9">Click the button below to see my video introduction!</span> 
               </p>
-              <a href="https://youtu.be/gg6nNH1Ya-o" class="btn btn-primary"><i class="bi bi-youtube"></i></a>
+              <div class="text-center">
+                <a href="https://youtu.be/gg6nNH1Ya-o" class="btn btn-primary"><i class="bi bi-youtube"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-</section>
 
 
 
@@ -88,10 +100,9 @@
     <!-- about me end -->
 
     <!-- Projects Start -->
-    <section class="projects">
+    <section id="Projects">Pro <span style="color: #009bf9;">jects</span></section>
 <body class="projects">
   <div>
-    <h1 class="text-center">Pro<span style="color: #009bf9;">jects</span></h1>
   </div>
 <div class="container-projects">
   <div class="box">
@@ -120,16 +131,12 @@
   </div>
 </div>
 </body>
-</section>
 <!-- Projects End -->
 
 <!-- Contact Me Start -->
-<section class="contact-me">
+<section id="Contact">Cont <span style="color: #009bf9;">act</span></section>
 <div class="container-contact">
   <form action="action_page.php">
-    <div>
-      <h1 class="text-center">Contact <span style="color: #009bf9;">Me</span></h1>
-    </div>
 
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -148,12 +155,11 @@
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
-
   </form>
+
+
 </div>
-</section>
-
 <!-- Contact Me End -->
-
+<script src="script.js"></script>
   </body>
 </html>

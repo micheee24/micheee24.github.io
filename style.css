@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;500;600;700&display=swap');
-:root{
---primaryColor:#101820;
---secondColor:#009bf9;
---textColor:#F2FAFF;
---gray:rgba(42,53,62,0.4);
+
+:root {
+    --primaryColor: #101820;
+    --secondColor: #009bf9;
+    --textColor: #F2FAFF;
+    --gray: rgba(42, 53, 62, 0.4);
 }
+
 /* NavBar */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-decoration: none!important;
+    /* text-decoration: none!important;
     border: none;
-    list-style: none;
+    list-style: none; */
 }
-body{
+
+body {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -22,14 +25,17 @@ body{
     background: var(--primaryColor);
     color: var(--textColor);
 }
-#mainNavbar{
-    background-color: var(--primaryColor)!important;
+
+#mainNavbar {
+    background-color: var(--primaryColor) !important;
     border-bottom: 1px solid var(--gray);
 }
-#mainNavbar .nav-item .nav-link{
+
+#mainNavbar .nav-item .nav-link {
     position: relative;
     color: var(--textColor);
 }
+
 #mainNavbar .nav-item .nav-link::after {
     content: '';
     position: absolute;
@@ -44,19 +50,64 @@ body{
     -ms-transition: ease .40s;
     -o-transition: ease .40s;
 }
-#mainNavbar .nav-item:not(:last-child) .nav-link:hover::after{
+
+#mainNavbar .nav-item:not(:last-child) .nav-link:hover::after {
     width: 100%;
 }
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
-.navbar-toggler-icon:focus{
+.navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
 }
 
-section{
-    padding: 5rem;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
+
+.logo {
+    font-size: 40px;
+    color: var(--textColor);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 18px;
+    color: var(--textColor);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--secondColor);
+}
+
+section {
+    min-height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 40px;
+    color: var(--textColor);
+    font-weight: bold;
+}
+
+
 /* Navbar End */
 
 /* About Me */
@@ -69,7 +120,7 @@ section{
     -o-transition: all .4s;
 }
 
-#hero .social a:hover{
+#hero .social a:hover {
     color: var(--textColor);
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
@@ -78,7 +129,7 @@ section{
     -o-transform: scale(1.2);
 }
 
-#hero h1 .typer{
+#hero h1 .typer {
     color: var(--secondColor);
 }
 
@@ -91,12 +142,13 @@ section{
     padding: 0;
     box-sizing: border-box;
 }
-.body-projects{
+
+.body-projects {
     display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background: #1d061a
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1d061a
 }
 
 .container-projects {
@@ -156,12 +208,12 @@ section{
 
 .container-projects .box:nth-child(1):before,
 .container-projects .box:nth-child(1):after {
-background: linear-gradient(315deg, var(--primaryColor), var(--secondColor))
+    background: linear-gradient(315deg, var(--primaryColor), var(--secondColor))
 }
 
 .container-projects .box:nth-child(2):before,
 .container-projects .box:nth-child(2):after {
-    background: linear-gradient(315deg, var(--primaryColor),var(--secondColor))
+    background: linear-gradient(315deg, var(--primaryColor), var(--secondColor))
 }
 
 .container-projects .box:nth-child(3):before,
@@ -271,13 +323,14 @@ input[type=text],
 select,
 textarea {
     width: 100%;
+    height: auto;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical
+    resize: vertical;
 }
 
 input[type=submit] {
@@ -290,12 +343,20 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #F2FAFF;
+    background-color: #73a2c0;
 }
 
 .container-contact {
+    width: 45%;
     border-radius: 5px;
     background-color: var(--primaryColor);
     padding: 20px;
 }
+
 /* Contact Me End */
+/* icons */
+#icon {
+    padding-left: 20px;
+    width: 100px;
+    height: 50px;
+}
