@@ -24,6 +24,7 @@ body {
     scroll-padding-top: 5.5rem;
     background: var(--primaryColor);
     color: var(--textColor);
+    
 }
 
 #mainNavbar {
@@ -320,60 +321,62 @@ section {
 /* Projects End */
 
 /* Skills */
-.skill-ball{
+.skill-container{
     display: flex;
-    justify-content: space-evenly;
+    align-content: center;
+    justify-content:space-evenly;
+    margin-top: 250px;
+
+}
+.skill{
+    width: 160px;
+    height: 160px;
+    /* background-color: var(--secondColor); */
+    position: relative;
+}
+.outer{
+    
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px #070b0f,-6px -6px 10px -1px #192531;
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    margin-top: 300px;
-}
-.ball1{
-    width: 200px;
-    height: 200px;
-    clip-path: circle(50% at 0%);
-    shape-outside: circle(50% at 30%);
-    transform: rotate(270deg);
-    background: var(--secondColor);
-}
-.ball2{
-    width: 200px;
-    height: 200px;
-    clip-path: circle(50% at 0%);
-    shape-outside: circle(50% at 30%);
-    transform: rotate(270deg);
-    background: var(--secondColor);
-}
-.ball3{
-    width: 200px;
-    height: 200px;
-    clip-path: circle(50% at 0%);
-    shape-outside: circle(50% at 30%);
-    transform: rotate(270deg);
-    background: var(--secondColor);
-}
-.ball4{
-    width: 200px;
-    height: 200px;
-    clip-path: circle(50% at 0%);
-    shape-outside: circle(50% at 30%);
-    transform: rotate(270deg);
-    background: var(--secondColor);
-}
-.ball5{
-    width: 200px;
-    height: 200px;
-    clip-path: circle(50% at 0%);
-    shape-outside: circle(50% at 30%);
-    transform: rotate(270deg);
-    background: var(--secondColor);
-}
-.inside{
-    margin-top: 50%;
-    margin-bottom: 100%;
-    display: flex;
     justify-content: center;
-    align-items: end;
-    transform:rotate(90deg);
+    box-shadow:
+    inset 4px 4px 6px -1px #070b0f,
+    inset -4px -4px 6px -1px #070b0f,
+    -0.5px -0.5px 0px #192531,
+    0.5px 0.5px 0px #192531,
+    0px 12px 10px -10px #192531;
+}
+#number{
+    font-weight: 800;
+    color: var(--textColor);
+}
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width:20px;
+    stroke-dasharray:472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@keyframes anim{
+100%{
+    stroke-dashoffset: 165;
+}
 }
 /* Skills End */
 
