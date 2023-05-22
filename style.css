@@ -12,9 +12,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* text-decoration: none!important;
+    text-decoration: none!important;
     border: none;
-    list-style: none; */
+    list-style: none;
 }
 
 body {
@@ -319,6 +319,9 @@ section {
 /* Projects End */
 
 /* Contact Me */
+.container-contact{
+    margin-left: 50px;
+}
 input[type=text],
 select,
 textarea {
