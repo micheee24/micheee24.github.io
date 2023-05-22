@@ -311,8 +311,9 @@ section {
 }
 
 .container-projects .box .content a:hover {
-    background: #ffcf4d;
-    border: 1px solid rgba(255, 0, 88, 0.4);
+    background: var(--primaryColor);
+    color: var(--textColor);
+    border: 1px solid var(--secondColor);
     box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
 }
 
