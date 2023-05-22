@@ -327,6 +327,54 @@ section {
     flex-wrap: wrap;
     margin-top: 300px;
 }
+.ball1{
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50% at 0%);
+    shape-outside: circle(50% at 30%);
+    transform: rotate(270deg);
+    background: var(--secondColor);
+}
+.ball2{
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50% at 0%);
+    shape-outside: circle(50% at 30%);
+    transform: rotate(270deg);
+    background: var(--secondColor);
+}
+.ball3{
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50% at 0%);
+    shape-outside: circle(50% at 30%);
+    transform: rotate(270deg);
+    background: var(--secondColor);
+}
+.ball4{
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50% at 0%);
+    shape-outside: circle(50% at 30%);
+    transform: rotate(270deg);
+    background: var(--secondColor);
+}
+.ball5{
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50% at 0%);
+    shape-outside: circle(50% at 30%);
+    transform: rotate(270deg);
+    background: var(--secondColor);
+}
+.inside{
+    margin-top: 50%;
+    margin-bottom: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transform:rotate(90deg);
+}
 /* Skills End */
 
 /* Contact Me */
