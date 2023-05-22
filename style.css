@@ -319,6 +319,16 @@ section {
 
 /* Projects End */
 
+/* Skills */
+.skill-ball{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 300px;
+}
+/* Skills End */
+
 /* Contact Me */
 .container-contact{
     margin-left: 50px;
