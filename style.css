@@ -28,6 +28,7 @@ body {
 }
 h3{
     margin-top: 20px;
+    text-shadow: 7px 3px 8px var(--secondColor);
 }
 
 #mainNavbar {
@@ -116,6 +117,9 @@ section {
 
 
 /* About Me */
+#name{
+    text-shadow: 10px 3px 8px #192531;
+}
 
 #hero .social a {
     transition: all;
