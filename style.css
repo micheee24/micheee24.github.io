@@ -26,6 +26,9 @@ body {
     color: var(--textColor);
     
 }
+h3{
+    margin-top: 20px;
+}
 
 #mainNavbar {
     background-color: var(--primaryColor) !important;
